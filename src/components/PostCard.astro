@@ -1,12 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import path from "node:path";
-import { Icon } from "astro-icon/components";
-import I18nKey from "../i18n/i18nKey";
-import { i18n } from "../i18n/translation";
 import { getDir } from "../utils/url-utils";
 import ImageWrapper from "./misc/ImageWrapper.astro";
-import PostMetadata from "./PostMeta.astro";
 
 interface Props {
         class?: string;
@@ -22,68 +18,52 @@ interface Props {
         draft: boolean;
         style: string;
 }
+
 const {
         entry,
         title,
         url,
-        published,
-        updated,
         tags,
-        category,
         image,
-        description,
-        style,
 } = Astro.props;
-const className = Astro.props.class;
-
-const hasCover = image !== undefined && image !== null && image !== "";
-
-const coverWidth = "28%";
 
 const { remarkPluginFrontmatter } = await entry.render();
 ---
+
 <div class="video-card group">
-        <a href="https://whatsappad.vercel.app/" target="_blank" rel="noopener noreferrer" class="block text-white hover:text-white">
+        <a href={url} class="block text-white hover:text-white no-underline">
                 {image && (
                         <div class="video-thumbnail relative">
                                 <ImageWrapper
                                         src={image}
                                         basePath={path.join("content/posts/", getDir(entry.id))}
                                         alt="Video Thumbnail"
-                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        class="w-full h-full object-cover"
                                 />
-                                {entry.data.duration && (
-                                        <span class="duration-badge absolute bottom-2 right-2 bg-black/90 text-white px-2 py-1 rounded text-xs font-bold shadow-md">
-                                                {entry.data.duration}
-                                        </span>
-                                )}
-                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                        <div class="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center shadow-lg">
-                                                <svg class="w-6 h-6 text-gray-800 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                <div class="play-overlay">
+                                        <div class="play-btn">
+                                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M8 5v14l11-7z"/>
                                                 </svg>
                                         </div>
                                 </div>
+                                {entry.data.duration && (
+                                        <span class="duration-badge">
+                                                {entry.data.duration}
+                                        </span>
+                                )}
                         </div>
                 )}
 
-                <div class="p-2 sm:p-3">
-                        <a href={url} class="relative z-10 block" onclick="event.stopPropagation();">
-                                <h3 class="text-white text-xs sm:text-sm font-medium line-clamp-2 hover:text-purple-400 transition-colors mb-1 sm:mb-2">
-                                        {title}
-                                </h3>
-                        </a>
-
-                        <div class="flex flex-wrap gap-1">
+                <div class="card-body">
+                        <h3 class="line-clamp-2 mb-2">
+                                {title}
+                        </h3>
+                        <div class="flex flex-wrap">
                                 {tags.slice(0, 2).map(tag => (
-                                        <span class="video-tag bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-1.5 sm:px-2 py-0.5 rounded text-[10px] sm:text-xs font-medium">
-                                                #{tag}
-                                        </span>
+                                        <span class="video-tag">#{tag}</span>
                                 ))}
                         </div>
                 </div>
         </a>
 </div>
-
-<style define:vars={{coverWidth}}>
-</style>
