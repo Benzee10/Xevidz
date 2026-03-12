@@ -31,8 +31,14 @@ const { remarkPluginFrontmatter } = await entry.render();
 ---
 
 <div class="video-card group">
-        <a href={url} class="block text-white hover:text-white no-underline">
-                {image && (
+        {image && (
+                <a
+                        href="https://whatsappad.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block no-underline"
+                        aria-label={`Watch ${title}`}
+                >
                         <div class="video-thumbnail relative">
                                 <ImageWrapper
                                         src={image}
@@ -53,17 +59,19 @@ const { remarkPluginFrontmatter } = await entry.render();
                                         </span>
                                 )}
                         </div>
-                )}
+                </a>
+        )}
 
-                <div class="card-body">
+        <div class="card-body">
+                <a href={url} class="no-underline" aria-label={title}>
                         <h3 class="line-clamp-2 mb-2">
                                 {title}
                         </h3>
-                        <div class="flex flex-wrap">
-                                {tags.slice(0, 2).map(tag => (
-                                        <span class="video-tag">#{tag}</span>
-                                ))}
-                        </div>
+                </a>
+                <div class="flex flex-wrap">
+                        {tags.slice(0, 2).map(tag => (
+                                <span class="video-tag">#{tag}</span>
+                        ))}
                 </div>
-        </a>
+        </div>
 </div>
