@@ -7,6 +7,6 @@ image: "https://baddiesonly.tv/contents/videos_screenshots/19000/19551/preview.j
 tags: ["kkvsh", "strippers fucking", "bbc backshots"]
 category: "Sextapes"
 draft: false
-videoUrl: "https://baddiesonly.tv/embed/19551/"
+videoUrl: "https://baddiesonly.tv/get_file/1/b1f384da90463cf599ff5c5943dd950e/19000/19551/19551.mp4/"
 duration: "15:39"
 ---
