@@ -7,6 +7,6 @@ image: "https://baddiesonly.tv/contents/videos_screenshots/11000/11719/preview.j
 tags: ["ohsoyoujade", "celebrity sextapes"]
 category: "Sextapes"
 draft: false
-videoUrl: "https://baddiesonly.tv/get_file/1/784a90588531512791e2304ebcb05c60/11000/11719/11719.mp4/"
+videoUrl: "https://baddiesonly.tv/embed/11719/"
 duration: "2:47"
 ---

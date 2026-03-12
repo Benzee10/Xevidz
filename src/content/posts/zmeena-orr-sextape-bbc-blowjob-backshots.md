@@ -7,6 +7,6 @@ image: "https://baddiesonly.tv/contents/videos_screenshots/2000/2241/preview.jpg
 tags: ["zmeena orr", "deepthroat", "bbc backshots", "pov backshots"]
 category: "Sextapes"
 draft: false
-videoUrl: "https://baddiesonly.tv/get_file/1/54837dff5198e02d4f5c65e7f3e64ac5/2000/2241/2241.mp4/"
+videoUrl: "https://baddiesonly.tv/embed/2241/"
 duration: "10:09"
 ---

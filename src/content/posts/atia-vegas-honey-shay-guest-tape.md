@@ -7,6 +7,6 @@ image: "https://baddiesonly.tv/contents/videos_screenshots/14000/14673/preview.j
 tags: ["atia vegas", "celebrity sextapes", "honey shay"]
 category: "Sextapes"
 draft: false
-videoUrl: "https://baddiesonly.tv/get_file/1/fad05a43607331795b370c601c30c826/14000/14673/14673.mp4/"
+videoUrl: "https://baddiesonly.tv/embed/14673/"
 duration: "34:36"
 ---

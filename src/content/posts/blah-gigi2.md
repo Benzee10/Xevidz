@@ -7,6 +7,6 @@ image: "https://baddiesonly.tv/contents/videos_screenshots/6000/6362/preview.jpg
 tags: ["blah gigi", "bbc backshots"]
 category: "Sextapes"
 draft: false
-videoUrl: "https://baddiesonly.tv/get_file/1/1deafe2415a2d2d74fb0413550c3b116/6000/6362/6362.mp4/"
+videoUrl: "https://baddiesonly.tv/embed/6362/"
 duration: "15:15"
 ---

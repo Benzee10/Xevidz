@@ -7,6 +7,6 @@ image: "https://baddiesonly.tv/contents/videos_screenshots/4000/4575/preview.jpg
 tags: ["yasmine lopez", "bubble butt", "tatted ass"]
 category: "Latina"
 draft: false
-videoUrl: "https://baddiesonly.tv/get_file/1/1c138ea4fe0503331c564ba36f53a0f6/4000/4575/4575.mp4/"
+videoUrl: "https://baddiesonly.tv/embed/4575/"
 duration: "16:35"
 ---

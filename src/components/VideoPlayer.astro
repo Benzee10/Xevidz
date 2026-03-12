@@ -16,18 +16,17 @@ const secureVideoUrl = videoUrl?.replace(/^http:\/\//i, 'https://');
 {secureVideoUrl && (
   <div class:list={["video-player-wrapper", className]}>
     <div class="video-container">
-      {secureVideoUrl.includes('xvideos.com/embedframe/') ? (
-        <!-- Handle XVideos embed URLs -->
+      {secureVideoUrl.includes('xvideos.com/embedframe/') || secureVideoUrl.includes('baddiesonly.tv/embed/') ? (
+        <!-- Handle XVideos and BaddiesOnly embed URLs -->
         <iframe
           src={secureVideoUrl}
           frameborder="0"
           width="100%"
           scrolling="no"
           allowfullscreen
-          allow="autoplay; fullscreen; encrypted-media"
+          allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
           class="video-iframe"
           loading="lazy"
-          sandbox="allow-scripts allow-same-origin allow-presentation"
         ></iframe>
       ) : secureVideoUrl.includes('leaktube.org') ? (
         <!-- Handle Leaktube URLs -->
