@@ -7,6 +7,6 @@ image: "https://thumb-cdn77.xvideos-cdn.com/e11613a3-d0c8-421a-aee9-2ab70c505ba4
 tags: ["ebony", "amateur", "big-dick", "rough-sex", "cheater", "thot", "black-girls", "atlanta"]
 category: "Sextapes"
 draft: false
-videoUrl: "https://mp4-cdn77.xvideos-cdn.com/e11613a3-d0c8-421a-aee9-2ab70c505ba4/0/video_360p.mp4?secure=mG4IRCkk3ECauNS8oV39Dw==,1773375680"
+videoUrl: "https://www.xvideos.com/embedframe/iflpcvm110c"
 duration: "48:32"
 ---
